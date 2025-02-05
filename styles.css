@@ -5,7 +5,7 @@ body {
 }
 .project-image {
     max-width: 100%; /* Makes the image responsive */
-    width: 150px; /* Set fixed width */
-    height: 150px; /* Set fixed height */
+    width: 15px; /* Set fixed width */
+    height: 15px; /* Set fixed height */
     object-fit: cover; /* Make sure the image doesn't stretch */
 }
