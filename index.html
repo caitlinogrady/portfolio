@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Free Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Main Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is hosted for free!</p>
+    <header>
+        <h1>Caitlin O'Grady</h1>
+        <h2>Welcome to my portfolio! I personally coded this website in order to showcase recent coding projects I have completed.</h2>
+    </header>
+    
+    <nav>
+        <a href="about.html" class="about-link">About Me</a>
+    </nav>
+    
+    <section>
+        <h1>My Projects</h1>
+        <h2>Click below to learn about each project</h2>
+        <div class="link-container">
+            <a href="NBA1.html" class="link-box">
+                <img src="NBA1.jpg" alt="NBA Image 1">
+                <h3>NBA Statistics Compiler</h3>
+                <p>This project utilizes the NBA RapidAPI to compile NBA statistics. </p>
+            </a>
+            <a href="NFL1.html" class="link-box">
+                <img src="NFL1.jpg" alt="NFL Image 1">
+                <h3>NFL Concussions and Performance</h3>
+                <p>This project creates an interactive app that allows users to search for NFL teams and view their concussion history as well as player and team performance data. </p>
+            </a>
+        </div>
+    </section>
 </body>
 </html>
