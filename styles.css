@@ -3,3 +3,8 @@ body {
     text-align: center;
     background-color: #f4f4f4;
 }
+.project-image {
+    width: 150px; /* Set the width to 150px */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Make sure the image doesn't stretch */
+}
