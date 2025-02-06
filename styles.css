@@ -38,12 +38,7 @@ body {
     margin: 0;
 }
 
-/* Subtitle with Transparent Background */
-.subtitle-container {
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
+
 
 /* Button Container - Centered Below Subtitle */
 .button-container {
@@ -61,8 +56,8 @@ body {
 
 /* Image Buttons */
 .image-button {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
 }
@@ -75,7 +70,7 @@ body {
 
 /* Button Labels */
 .button-label {
-    font-family: "Work Sans", sans-serif;
+    font-family: "DotGothic16", sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: white;
