@@ -4,40 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Main Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&family=Ultra&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Caitlin O'Grady</h1>
-        <h4>Welcome to my portfolio! I personally coded, styled, and launched this website. Below, you can learn more about me, visit my github, or learn more about the projects I have worked on!</h4>
-        
-        <nav class="header-nav">
-            <a href="about.html" class="about-link">About Me</a>
-            <a href="https://github.com/caitlinogrady" target="_blank">
-                <img src="github.jpg" alt="GitHub" class="github-logo">
-            </a>
-        </nav>
-    </header>
- 
-    
-    <section>
-        <div class="proj-header">
-        <h1>My Projects</h1>
+    <div class="cover-container">
+        <h1 class="title">Caitlin O'Grady</h1>
+        <div class="subtitle-container">
+            <h4 class="subtitle">Welcome to my portfolio! I personally coded, styled, and launched this website. Below, you can learn more about me, visit my GitHub, or explore the projects I have worked on!</h4>
         </div>
-        <div class="link-container">
-            <a href="NBA1.html" class="link-box">
-				<img src="NBA1.jpg" alt="NBA Image 1" class="project-image">
-				<h2>NBA Statistics  API and Data Compiler</h2>
-				<p>This project utilizes the NBA RapidAPI. It allows users to compile data using the API as well as create basic calculations and visualizations based on this data.</p>
-			</a>
-			<a href="NFL1.html" class="link-box">
-				<img src="NFL1.jpg" alt="NFL Image 1" class="project-image">
-				<h2>NFL Concussions and Performance</h2>
-				<p>This project creates an interactive app that allows users to search for NFL teams and view their concussion history as well as player and team performance data. </p>
-			</a>
-        </div>
-    </section>
-
-    <footer class="footer"></footer>
+        <a href="about.html" class="bottom-button about-btn">About Me</a>
+        <a href="projects.html" class="bottom-button projects-btn">Projects</a>
+    </div>
 </body>
 </html>
