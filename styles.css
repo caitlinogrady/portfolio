@@ -13,7 +13,7 @@ body {
 
 header {
     background-color: white;
-    border: 3px solid lightgoldenrodyellow;
+    border: 3px solid lemonchiffon;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
@@ -33,26 +33,28 @@ header {
 
 
 .about-link {
-    background-color: lightgoldenrodyellow;
+    background-color: lemonchiffon;
+    border-color: yellow;
     color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 15px;
-    width: 60%;
+    width: 75%;
     text-align: center;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .about-link:hover {
-    background-color: lemonchiffon; 
+    background-color: wheat; 
     transform: scale(1.05);
+    box-shadow: 0 4px 8px black;
 }
 
 .proj-header {
     background-color: white;
-    border: 3px solid lightblue;
+    border: 3px solid lemonchiffon;
     padding: 10px;
     margin: 10px auto;
     width: 50%;
@@ -69,7 +71,7 @@ header {
 
 
 .link-box {
-    background-color: lightblue; 
+    background-color: lemonchiffon; 
     padding: 20px;
     text-decoration: none;
     color: black;
