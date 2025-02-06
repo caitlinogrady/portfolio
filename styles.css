@@ -11,46 +11,45 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure it covers the entire screen */
 }
 
-/* Centering Cover Content */
+/* Ensure Content is Centered and Doesn't Overflow */
 .cover-container {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Keeps title at the bottom */
-    align-items: flex-start; /* Aligns content to the left */
-    padding: 5%;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center;
+    overflow: hidden; /* Prevents extra content from causing scrollbars */
 }
 
-/* Title in Bottom Left */
+/* Title */
 .title {
     font-family: "DotGothic16", sans-serif;
     font-size: 6vw;
     font-weight: 400;
-    text-align: left;
     color: white;
     margin: 0;
 }
 
-/* Subtitle Styling */
+/* Subtitle with Transparent Background */
 .subtitle-container {
-    background: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    width: 40%;
-    text-align: left;
+    padding: 10px 20px;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
-/* Button Container - Directly Below Subtitle */
+/* Button Container - Centered Below Subtitle */
 .button-container {
     display: flex;
-    gap: 20px; /* Space between buttons */
-    margin-top: 15px; /* Space below subtitle */
-    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 /* Wrapper for Image & Label */
@@ -58,7 +57,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 /* Image Buttons */
@@ -66,13 +64,13 @@ body {
     width: 50px;
     height: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px; /* Optional rounded corners */
+    border-radius: 10px;
 }
 
 /* Hover Effect - Enlarge & Shadow */
 .image-button:hover {
     transform: scale(1.2);
-    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.8);
+    box-shadow: 0 4px 15px black;
 }
 
 /* Button Labels */
@@ -83,7 +81,6 @@ body {
     color: white;
     margin-top: 5px;
 }
-
 
 
   .footer {
