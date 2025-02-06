@@ -1,19 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('background.jpg'); /* Replace with your image file */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     margin: 0;
     padding: 0;
 }
 
-/* Style for header title and subtitle */
+
 header {
     background-color: white;
-    border: 3px solid pink;
+    border: 3px solid lightgoldenrodyellow;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
@@ -31,35 +31,35 @@ header {
     justify-content: space-between;
 }
 
-/* About Me button styling */
+
 .about-link {
-    background-color: #ffccdd; /* Light pink */
+    background-color: lightgoldenrodyellow;
     color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 15px;
-    width: 75%;
+    width: 60%;
     text-align: center;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .about-link:hover {
-    background-color: #ffb3c6; /* Slightly darker pink on hover */
+    background-color: lemonchiffon; 
     transform: scale(1.05);
 }
 
 .proj-header {
     background-color: white;
     border: 3px solid lightblue;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
     border-radius: 10px;
 }
 
-/* Container for project links */
+
 .link-container {
     display: flex;
     justify-content: center;
@@ -67,9 +67,9 @@ header {
     margin-top: 20px;
 }
 
-/* Styling for project link boxes */
+
 .link-box {
-    background-color: lightblue; /* Light pink */
+    background-color: lightblue; 
     padding: 20px;
     text-decoration: none;
     color: black;
@@ -81,13 +81,13 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect */
+
 .link-box:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px black;
 }
 
-/* Image styling */
+
 .project-image {
     max-width: 100%;
     width: 150px;
@@ -96,7 +96,7 @@ header {
     border-radius: 5px;
 }
 
-/* Title and subtitle inside the link-box with white background and pink border */
+
 .link-box h3, .link-box p {
     background-color: white;
     border: 2px solid cornflowerblue;
@@ -105,4 +105,10 @@ header {
     width: 100%;
     text-align: center;
     margin: 10px 0;
+}
+
+.footer {
+    height: 50px; 
+    width: 100%;
+    background-color: transparent;
 }
