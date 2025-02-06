@@ -56,9 +56,9 @@ header {
 .proj-header {
     background-color: white;
     border: 3px solid lightgray;
-    padding: 10px;
-    margin: 10px auto;
-    width: 35%;
+    padding: 3px;
+    margin: 3px auto;
+    width: 85%;
     border-radius: 10px;
 }
 
