@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-image: url('background.jpg'); /* Replace with your image file */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
     margin: 0;
     padding: 0;
 }
@@ -10,6 +14,45 @@ body {
 header {
     background-color: white;
     border: 3px solid pink;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+/* About Me button styling */
+.about-link {
+    background-color: #ffccdd; /* Light pink */
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    width: 75%;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-link:hover {
+    background-color: #ffb3c6; /* Slightly darker pink on hover */
+    transform: scale(1.05);
+}
+
+.proj-header {
+    background-color: white;
+    border: 3px solid lightblue;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
@@ -26,7 +69,7 @@ header {
 
 /* Styling for project link boxes */
 .link-box {
-    background-color: #ffccdd; /* Light pink */
+    background-color: lightblue; /* Light pink */
     padding: 20px;
     text-decoration: none;
     color: black;
@@ -41,7 +84,7 @@ header {
 /* Hover effect */
 .link-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px black;
 }
 
 /* Image styling */
@@ -56,7 +99,7 @@ header {
 /* Title and subtitle inside the link-box with white background and pink border */
 .link-box h3, .link-box p {
     background-color: white;
-    border: 2px solid pink;
+    border: 2px solid cornflowerblue;
     padding: 10px;
     border-radius: 5px;
     width: 100%;
