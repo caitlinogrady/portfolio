@@ -1,6 +1,11 @@
 /* Font import applied via <link> in HTML */
 
 /* Base styles */
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+  }
 body {
 	margin: 0;
 	padding: 0;
@@ -42,13 +47,12 @@ body {
   
   /* Bio section */
   .bio {
-	max-width: 900px;
-	margin: 2rem auto;
 	display: flex;
 	align-items: flex-start;
 	gap: 2rem;
-	padding: 0 1rem;
   }
+  
+
   
   .bio-image {
 	width: 150px;
@@ -79,9 +83,6 @@ body {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap: 1.5rem;
-	max-width: 800px;
-	margin: 2rem auto;
-	padding: 0 1rem;
   }
   
   .link-card {
