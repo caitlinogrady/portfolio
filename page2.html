@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Success in WBB</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Karla', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .github-widget {
+      width: 100%;
+      background: #ffffff;
+      padding: 2rem 1rem;
+      box-sizing: border-box;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .github-widget .repo-card {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fefefe;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+	
+	.photo-card {
+  		background: white;
+  		border-radius: 8px;
+  		overflow: hidden;
+  		box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  		text-align: center;
+  		cursor: pointer;
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  		justify-content: center; /* Vertical centering */
+  		padding: 1rem;
+  		min-height: 350px; /* Set a consistent height */
+	}
+
+
+    .photo-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .photo-card img {
+  		width: auto;
+ 	 	max-width: 100%;
+  		max-height: 200px;
+  		display: block;
+  		margin-bottom: 1rem;
+	}
+
+	.photo-card p {
+  		margin: 0;
+  		padding: 0;
+	}
+
+    .viewer {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      flex-direction: column;
+    }
+
+    .viewer img {
+      max-width: 90%;
+      max-height: 80%;
+      margin-bottom: 1rem;
+    }
+
+    .viewer-controls {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .viewer button {
+      background: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .go-back {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .go-back a {
+      text-decoration: none;
+      background: #1e1e2f;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .go-back a:hover {
+      background: #3c3c60;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mapping Success in Women's Basketball Using Computer Vision and Machine Learning</h1>
+  </header>
+
+  <section class="github-widget">
+    <div class="repo-card">
+      <h3>Computer Vision and Machine Learning</h3>
+      <p>
+        This project is still in progress. It uses computer vision to identify and map Women's basketball players positions on the court, and these coordinates are then homographized in order to be represented in 2D. In addition, a predictive model uses game features, including player x and y coordinates, to predict shot success.
+      </p>
+      <a href="https://github.com/caitlinogrady/SuccessInWomensBBall/" target="_blank">
+        View on GitHub →
+      </a>
+    </div>
+  </section>
+
+  <section class="photos">
+    <div class="photo-card" onclick="openViewer(0)">
+      <img src="proj2/players.jpeg" alt="Network">
+      <p>Computer Vision of Players on the Court</p>
+    </div>
+    <div class="photo-card" onclick="openViewer(1)">
+      <img src="proj2/confusion.jpeg" alt="Feature Importance">
+      <p>Confusion Network to Analyze Predictive Model Performance</p>
+    </div>
+    <div class="photo-card" onclick="openViewer(2)">
+      <img src="proj2/features.jpeg" alt="Confusion Matrix">
+      <p>Predictive Model Feature Importance</p>
+    </div>
+  </section>
+
+  <div class="viewer" id="viewer">
+    <img id="viewer-img" src="" alt="">
+    <div class="viewer-controls">
+      <button onclick="prevImage()">← Prev</button>
+      <button onclick="closeViewer()">Close</button>
+      <button onclick="nextImage()">Next →</button>
+    </div>
+  </div>
+
+  <div class="go-back">
+    <a href="index.html">← Back</a>
+  </div>
+
+  <script>
+    const images = [
+      "proj1/network.jpeg",
+      "proj1/features.jpeg",
+      "proj1/confusion.jpeg"
+    ];
+    const viewer = document.getElementById("viewer");
+    const viewerImg = document.getElementById("viewer-img");
+    let currentIndex = 0;
+
+    function openViewer(index) {
+      currentIndex = index;
+      viewerImg.src = images[currentIndex];
+      viewer.style.display = "flex";
+    }
+
+    function closeViewer() {
+      viewer.style.display = "none";
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      viewerImg.src = images[currentIndex];
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      viewerImg.src = images[currentIndex];
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeViewer();
+    });
+  </script>
+
+</body>
+</html>
