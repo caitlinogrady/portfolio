@@ -1,7 +1,6 @@
 /* Font import applied via <link> in HTML */
 
 /* Base styles */
-
 body {
 	margin: 0;
 	padding: 0;
@@ -93,5 +92,12 @@ body {
 	text-decoration: none;
 	color: #1e1e2f;
 	font-weight: 600;
-	box
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .link-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
   
