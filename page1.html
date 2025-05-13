@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Gambetta&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Karla', sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Gambetta', serif;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .bio {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .github-widget {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .photos {
+      max-width: 800px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+
+    .photo-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .photo-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .photo-card p {
+      margin: 0;
+      padding: 0.5rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Featured Project</h1>
+  </header>
+
+  <section class="bio">
+    <p>
+      I'm a data analyst and developer with a Master’s in Big Data Analytics and a background in neuroscience. I specialize in data visualization, machine learning, and building tools that make data more accessible and actionable.
+    </p>
+  </section>
+
+  <section class="github-widget">
+    <!-- Replace with your GitHub repo URL -->
+    <iframe src="https://ghbtns.com/github-btn.html?user=caitlinogrady&repo=portfolio&type=star&count=true&size=large" 
+            frameborder="0" 
+            scrolling="0" 
+            width="160" 
+            height="30" 
+            title="GitHub"></iframe>
+    <p>
+      View the full project on <a href="https://github.com/caitlinogrady/portfolio" target="_blank">GitHub</a>.
+    </p>
+  </section>
+
+  <section class="photos">
+    <div class="photo-card">
+      <img src="photo1.jpg" alt="Photo 1">
+      <p>Data visualization showing trends over time</p>
+    </div>
+    <div class="photo-card">
+      <img src="photo2.jpg" alt="Photo 2">
+      <p>Interactive dashboard built with JavaScript</p>
+    </div>
+    <div class="photo-card">
+      <img src="photo3.jpg" alt="Photo 3">
+      <p>Model performance comparison across datasets</p>
+    </div>
+  </section>
+
+</body>
+</html>
