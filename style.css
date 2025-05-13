@@ -1,42 +1,77 @@
+/* Font import applied via <link> in HTML */
+
 /* Base styles */
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Segoe UI", sans-serif;
+	font-family: 'Karla', sans-serif;
 	background-color: #f4f6f8;
 	color: #333;
 	line-height: 1.6;
   }
   
-  /* Header */
+  /* Header with background image */
   header {
-	background-color: #1e1e2f;
-	color: white;
-	padding: 3rem 1rem;
+	background: url('header-bg.jpg') no-repeat center center/cover;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
+	position: relative;
+	color: white;
+  }
+  
+  header .overlay {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 2rem;
+	width: 100%;
   }
   
   header h1 {
+	font-family: 'Gambetta', serif;
+	font-size: 3rem;
 	margin: 0;
-	font-size: 2.5rem;
   }
   
   header p {
 	margin-top: 0.5rem;
 	font-size: 1.2rem;
-	color: #cccccc;
+	color: #ddd;
   }
   
-  /* Bio Section */
+  /* Bio section */
   .bio {
-	max-width: 800px;
+	max-width: 900px;
 	margin: 2rem auto;
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
 	padding: 0 1rem;
   }
   
-  .bio h2 {
+  .bio-image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bio-text h2 {
+	font-family: 'Gambetta', serif;
 	font-size: 1.8rem;
-	margin-bottom: 0.5rem;
+	margin-top: 0;
+  }
+  
+  .bio-text a {
+	color: #0077cc;
+	text-decoration: none;
+	font-weight: 600;
+  }
+  
+  .bio-text a:hover {
+	text-decoration: underline;
   }
   
   /* Links Grid */
@@ -57,12 +92,5 @@ body {
 	text-decoration: none;
 	color: #1e1e2f;
 	font-weight: 600;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-	transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .link-card:hover {
-	transform: translateY(-4px);
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  }
+	box
   
