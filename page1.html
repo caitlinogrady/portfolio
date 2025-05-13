@@ -3,59 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Page</title>
+  <title>Project with GitHub Widget</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Gambetta&display=swap" rel="stylesheet">
-  <link href="github-widget/github-widget.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/repo.js@1.0.0/repo.min.js"></script>
   <style>
     body {
-      margin: 0;
       font-family: 'Karla', sans-serif;
-      background: #f4f6f8;
+      margin: 0;
+      background: #f9f9f9;
       color: #333;
     }
 
     header {
-      background: #1e1e2f;
+      background-color: #1e1e2f;
       color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 2rem;
     }
 
-    header h1 {
-      font-family: 'Gambetta', serif;
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    .bio {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .github-widget {
+    .bio, .github-widget, .photos {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
 
     .photos {
-      max-width: 800px;
-      margin: 2rem auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-      padding: 0 1rem;
+      gap: 1.5rem;
     }
 
     .photo-card {
       background: white;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       text-align: center;
     }
 
@@ -65,52 +48,42 @@
     }
 
     .photo-card p {
-      margin: 0;
-      padding: 0.5rem;
-      font-size: 0.95rem;
+      padding: 0.75rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Featured Project</h1>
+    <h1>Football Network Analysis</h1>
   </header>
 
   <section class="bio">
     <p>
-      I'm a data analyst and developer with a Master’s in Big Data Analytics and a background in neuroscience. I specialize in data visualization, machine learning, and building tools that make data more accessible and actionable.
+      I'm a data analyst with experience in sports analytics and machine learning. This project uses college player networks to predict NFL draft outcomes.
     </p>
   </section>
 
-  <div class="github-widget" data-user="caitlinogrady"></div>
-
   <section class="github-widget">
-	<img 
-	  src="https://github-readme-stats.vercel.app/api/pin/?username=caitlinogrady&repo=Football-Network-Analysis&theme=default" 
-	  alt="GitHub Repo Card" 
-	  style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
-	/>
-	<p>
-	  View the full project on <a href="https://github.com/caitlinogrady/Football-Network-Analysis" target="_blank">GitHub</a>.
-	</p>
+    <h2>GitHub Repository</h2>
+    <div class="repo" data-repo="caitlinogrady/Football-Network-Analysis"></div>
   </section>
-  
 
   <section class="photos">
     <div class="photo-card">
-      <img src="photo1.jpg" alt="Photo 1">
-      <p>Data visualization showing trends over time</p>
+      <img src="photo1.jpg" alt="Visualization 1">
+      <p>Network graph of college player connections</p>
     </div>
     <div class="photo-card">
-      <img src="photo2.jpg" alt="Photo 2">
-      <p>Interactive dashboard built with JavaScript</p>
+      <img src="photo2.jpg" alt="Visualization 2">
+      <p>Model performance comparison</p>
     </div>
     <div class="photo-card">
-      <img src="photo3.jpg" alt="Photo 3">
-      <p>Model performance comparison across datasets</p>
+      <img src="photo3.jpg" alt="Visualization 3">
+      <p>Draft prediction scatter plot</p>
     </div>
   </section>
-  <script src="github-widget/github-widget.min.js"></script>
+
 </body>
 </html>
+
