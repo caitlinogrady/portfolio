@@ -48,29 +48,39 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
+	
+	.photo-card {
+  		background: white;
+  		border-radius: 8px;
+  		overflow: hidden;
+  		box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  		text-align: center;
+  		cursor: pointer;
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  		justify-content: center; /* Vertical centering */
+  		padding: 1rem;
+  		min-height: 350px; /* Set a consistent height */
+	}
 
-    .photo-card {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .photo-card img {
-      width: 100%;
-      display: block;
-      transition: transform 0.2s;
-    }
 
     .photo-card:hover img {
       transform: scale(1.03);
     }
 
-    .photo-card p {
-      padding: 0.75rem;
-    }
+    .photo-card img {
+  		width: auto;
+ 	 	max-width: 100%;
+  		max-height: 200px;
+  		display: block;
+  		margin-bottom: 1rem;
+	}
+
+	.photo-card p {
+  		margin: 0;
+  		padding: 0;
+	}
 
     .viewer {
       display: none;
@@ -166,7 +176,7 @@
   </div>
 
   <div class="go-back">
-    <a href="index.html">← Go Back to Home</a>
+    <a href="index.html">← Back</a>
   </div>
 
   <script>
