@@ -136,16 +136,16 @@
 <body>
 
   <header>
-    <h1>D1 Football Network Analysis and Machine Learning Model to Predict the NFL Draft</h1>
+    <h1>SuperBowl Viewership Prediction</h1>
   </header>
 
   <section class="github-widget">
     <div class="repo-card">
-      <h3>Network Analysis and Machine Learning</h3>
+      <h3>Machine Learning</h3>
       <p>
-        This project builds a network connecting Division I college football players, their colleges, and NFL teams. Edges in the network represent which college a player attended and which NFL team drafted them, with draft round encoded as edge weight. Network-based features were then extracted and used to train a machine learning model to predict which NFL team a player would be drafted to. This model had an accuracy of 0.79.
+        This project created a predictive model that uses the regular season performance of the teams competing in the Super Bowl in order to predict Super Bowl viewership.
       </p>
-      <a href="https://github.com/caitlinogrady/Football-Network-Analysis" target="_blank">
+      <a href="https://github.com/caitlinogrady/SuperBowl-Viewership-Prediction" target="_blank">
         View on GitHub →
       </a>
     </div>
@@ -153,16 +153,20 @@
 
   <section class="photos">
     <div class="photo-card" onclick="openViewer(0)">
-      <img src="proj1/network.jpeg" alt="Network">
-      <p>Network of D1 College Players, D1 Colleges, and NFL Teams</p>
+      <img src="proj5/winnerperformance.png" alt="Network">
+      <p>Average Viewership by Winner Performance (Classified into Groups)</p>
     </div>
     <div class="photo-card" onclick="openViewer(1)">
-      <img src="proj1/features.jpeg" alt="Feature Importance">
-      <p>Predictive Model Feature Importance</p>
+      <img src="proj5/loserperformance.png" alt="Feature Importance">
+      <p>Average Viewership by Loser Performance (Classified into Groups)</p>
     </div>
     <div class="photo-card" onclick="openViewer(2)">
-      <img src="proj1/confusion.jpeg" alt="Confusion Matrix">
-      <p>Confusion Network to Analyze Predictive Model Performance</p>
+      <img src="proj5/mov.png" alt="Confusion Matrix">
+      <p>Average Viewership by Margin of Victory</p>
+    </div>
+    <div class="photo-card" onclick="openViewer(3)">
+      <img src="proj5/viewership.png" alt="Confusion Matrix">
+      <p>CAverage Viewership Over the Years</p>
     </div>
   </section>
 
@@ -181,9 +185,10 @@
 
   <script>
     const images = [
-      "proj1/network.jpeg",
-      "proj1/features.jpeg",
-      "proj1/confusion.jpeg"
+      "proj5/winnerperformance.png",
+      "proj5/loserperformance.png",
+      "proj5/mov.png",
+      "proj5/viewership.png"
     ];
     const viewer = document.getElementById("viewer");
     const viewerImg = document.getElementById("viewer-img");

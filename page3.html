@@ -143,7 +143,7 @@
     <div class="repo-card">
       <h3>Data Mining and Machine Learning</h3>
       <p>
-        This project uses data on NFL players' performance in the combine as well as their performance in the NFL in order to determine how similar certain players are to each other. Data mining methods are used on the player's combine performance, which is then used to calculate similarities to current NFL players, and these similarities are used to predict the player's performance in the NFL.
+        This project uses data on NFL players' performance in the combine as well as their performance in the NFL in order to determine how similar certain players are to each other, using cosine similarity calculations. Data mining methods are used on the player's combine performance, which is then used to calculate similarities to current NFL players, and these similarities are used to predict the player's performance in the NFL.
       </p>
       <a href="https://github.com/caitlinogrady/NFL-Player-Similarity-Performance-Prediction" target="_blank">
         View on GitHub →
@@ -153,16 +153,24 @@
 
   <section class="photos">
     <div class="photo-card" onclick="openViewer(0)">
-      <img src="proj1/network.jpeg" alt="Network">
-      <p>Network of D1 College Players, D1 Colleges, and NFL Teams</p>
+      <img src="proj3/output.png" alt="output">
+      <p>Sample Output of Similarity Calculator and Future Performance Prediction Tool</p>
     </div>
     <div class="photo-card" onclick="openViewer(1)">
-      <img src="proj1/features.jpeg" alt="Feature Importance">
-      <p>Predictive Model Feature Importance</p>
+      <img src="proj3/combineexplore.png" alt="combineexplore">
+      <p>Exploratory Visualizations of NFL Combine Data</p>
     </div>
     <div class="photo-card" onclick="openViewer(2)">
-      <img src="proj1/confusion.jpeg" alt="Confusion Matrix">
-      <p>Confusion Network to Analyze Predictive Model Performance</p>
+      <img src="proj3/nflexplore.png" alt="nflexplore">
+      <p>Exploratory Visualizations of NFL Data</p>
+    </div>
+    <div class="photo-card" onclick="openViewer(3)">
+      <img src="proj3/byposition.png" alt="byposition">
+      <p>Exploratory Visualizations of Data by NFL Positions</p>
+    </div>
+    <div class="photo-card" onclick="openViewer(4)">
+      <img src="proj3/pca.png" alt="pca">
+      <p>PCA Analysis</p>
     </div>
   </section>
 
@@ -181,9 +189,11 @@
 
   <script>
     const images = [
-      "proj1/network.jpeg",
-      "proj1/features.jpeg",
-      "proj1/confusion.jpeg"
+      "proj3/output.png",
+      "proj3/combineexplore.png",
+      "proj3/nflexplore.png",
+      "proj3/byposition.png",
+      "proj3/pca.png"
     ];
     const viewer = document.getElementById("viewer");
     const viewerImg = document.getElementById("viewer-img");

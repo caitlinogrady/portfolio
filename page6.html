@@ -136,83 +136,21 @@
 <body>
 
   <header>
-    <h1>D1 Football Network Analysis and Machine Learning Model to Predict the NFL Draft</h1>
+    <h1>NBA API and Database</h1>
   </header>
 
   <section class="github-widget">
     <div class="repo-card">
-      <h3>Network Analysis and Machine Learning</h3>
+      <h3>API Usage and Database Management</h3>
       <p>
-        This project builds a network connecting Division I college football players, their colleges, and NFL teams. Edges in the network represent which college a player attended and which NFL team drafted them, with draft round encoded as edge weight. Network-based features were then extracted and used to train a machine learning model to predict which NFL team a player would be drafted to. This model had an accuracy of 0.79.
+        This project uses the NBA RapidAPI to generate NBA statistics and create a database with statistics from the 2020 season on NBA teams points, points in the paint, rebounds, assists, personal fouls, steals, turnovers, and blocks. 
       </p>
-      <a href="https://github.com/caitlinogrady/Football-Network-Analysis" target="_blank">
+      <a href="https://github.com/caitlinogrady/NBA-Project" target="_blank">
         View on GitHub →
       </a>
     </div>
   </section>
 
-  <section class="photos">
-    <div class="photo-card" onclick="openViewer(0)">
-      <img src="proj1/network.jpeg" alt="Network">
-      <p>Network of D1 College Players, D1 Colleges, and NFL Teams</p>
-    </div>
-    <div class="photo-card" onclick="openViewer(1)">
-      <img src="proj1/features.jpeg" alt="Feature Importance">
-      <p>Predictive Model Feature Importance</p>
-    </div>
-    <div class="photo-card" onclick="openViewer(2)">
-      <img src="proj1/confusion.jpeg" alt="Confusion Matrix">
-      <p>Confusion Network to Analyze Predictive Model Performance</p>
-    </div>
-  </section>
-
-  <div class="viewer" id="viewer">
-    <img id="viewer-img" src="" alt="">
-    <div class="viewer-controls">
-      <button onclick="prevImage()">← Prev</button>
-      <button onclick="closeViewer()">Close</button>
-      <button onclick="nextImage()">Next →</button>
-    </div>
-  </div>
-
-  <div class="go-back">
-    <a href="index.html">← Back</a>
-  </div>
-
-  <script>
-    const images = [
-      "proj1/network.jpeg",
-      "proj1/features.jpeg",
-      "proj1/confusion.jpeg"
-    ];
-    const viewer = document.getElementById("viewer");
-    const viewerImg = document.getElementById("viewer-img");
-    let currentIndex = 0;
-
-    function openViewer(index) {
-      currentIndex = index;
-      viewerImg.src = images[currentIndex];
-      viewer.style.display = "flex";
-    }
-
-    function closeViewer() {
-      viewer.style.display = "none";
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      viewerImg.src = images[currentIndex];
-    }
-
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      viewerImg.src = images[currentIndex];
-    }
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeViewer();
-    });
-  </script>
-
+  
 </body>
 </html>
