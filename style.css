@@ -5,7 +5,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Karla', sans-serif;
-	background-color: #f4f6f8;
+	background-color: rgb(255, 255, 240)
+	;
 	color: #333;
 	line-height: 1.6;
   }
@@ -23,7 +24,7 @@ body {
   }
   
   header .overlay {
-	background: rgba(255, 182, 193, 0.3);
+	background: rgb(255, 255, 204);
 	padding: 2rem;
 	width: 100%;
 	box-shadow: #1e1e2f;
@@ -86,7 +87,7 @@ body {
   }
   
   .link-card {
-	background-color: rgba(255, 182, 193, 0.3);
+	background-color: rgb(255, 255, 204);
 	border-radius: 12px;
 	padding: 1.5rem;
 	text-align: center;
