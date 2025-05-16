@@ -1,6 +1,4 @@
-/* Font import applied via <link> in HTML */
 
-/* Base styles */
 body {
 	margin: 0;
 	padding: 0;
@@ -10,7 +8,6 @@ body {
 	line-height: 1.6;
   }
   
-  /* Header with background image */
   header {
 	background-color: rgb(255, 255, 240);
 	height: 300px;
@@ -41,7 +38,7 @@ body {
 	color: grey;
   }
   
-  /* Bio section */
+
   .bio {
 	max-width: 900px;
 	margin: 2rem auto;
@@ -75,7 +72,7 @@ body {
 	text-decoration: underline;
   }
   
-  /* Links Grid */
+
   .links {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
