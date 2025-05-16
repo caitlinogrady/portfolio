@@ -12,18 +12,18 @@ body {
   
   /* Header with background image */
   header {
-	background-color: skyblue;
+	background-color: white;
 	height: 300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	position: relative;
-	color: white;
+	color: black;
   }
   
   header .overlay {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(255, 182, 193, 0.5);
 	padding: 2rem;
 	width: 100%;
   }
@@ -37,7 +37,7 @@ body {
   header p {
 	margin-top: 0.5rem;
 	font-size: 1.2rem;
-	color: #ddd;
+	color: grey;
   }
   
   /* Bio section */
