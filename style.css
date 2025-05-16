@@ -86,7 +86,7 @@ body {
   }
   
   .link-card {
-	background-color: (255, 182, 193);
+	background-color: rgba(255, 182, 193, 0.7);
 	border-radius: 12px;
 	padding: 1.5rem;
 	text-align: center;
