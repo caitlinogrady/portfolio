@@ -12,7 +12,7 @@ body {
   
   /* Header with background image */
   header {
-	background-color: white;
+	background-color: rgb(255, 240, 245);
 	height: 300px;
 	display: flex;
 	align-items: center;
@@ -86,7 +86,7 @@ body {
   }
   
   .link-card {
-	background-color: rgba(255, 182, 193, 1);
+	background-color: rgba(255, 182, 193, 0.3);
 	border-radius: 12px;
 	padding: 1.5rem;
 	text-align: center;
