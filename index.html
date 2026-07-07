@@ -1,45 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&family=Gloock&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caitlin O'Grady — Data Analyst & Developer</title>
+<meta name="description" content="Portfolio of Caitlin O'Grady — data analyst and developer specializing in sports analytics, machine learning, and data visualization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="overlay">
+
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">Caitlin O'Grady</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="CaitlinOGrady-Resume.pdf">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text reveal">
+      <p class="eyebrow">DATA ANALYST — BIG DATA ANALYTICS</p>
       <h1>Caitlin O'Grady</h1>
-      <p>Masters Degree in Big Data Analytics from the University of Michigan</p>
+      <p class="hero-sub">M.S. in Big Data Analytics, University of Michigan</p>
+      <p class="hero-body">I turn messy, real-world data into models and stories people can act on — with a focus on sports analytics, machine learning, and computer vision.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="CaitlinOGrady-Resume.pdf">View My Resume</a>
+        <a class="btn btn-ghost" href="mailto:ogradycaitlin333@gmail.com">Contact Me</a>
+      </div>
     </div>
-  </header>
-
-  <section class="bio">
-    <img src="final.png" alt="Profile picture" class="bio-image">
-    <div class="bio-text">
-      <h2>About Me</h2>
-      <p>
-        I'm a data analyst and developer with a Masters in Big Data Analytics and a background in Neuroscience from the University of Michigan. I specialize in data analysis, machine learning, and programming, with experience working in media communications, athletics, and sports analytics.  I’m skilled in Python, R, and SQL,and passionate about turning complex data into actionable insights and findings.
-      </p>
-	  <p>
-		I have personally coded the HTML and CSS for this webpage and hosted it through my GitHub. All of my personal projects, in areas such as machine learning, data mining, and computer vision, are expanded upon below! 
-	  </p>
-      <p>
-        <a href="CaitlinOGrady-Resume.pdf" target="_blank">View My Resume</a> • <a href="mailto:ogradycaitlin333@gmail.com">Contact Me</a>
-      </p>
+    <div class="hero-photo reveal">
+      <img src="final.png" alt="Portrait of Caitlin O'Grady">
     </div>
   </section>
 
-  <section class="links">
-    <a class="link-card" href="page1.html">Football Network Analysis and NFL Draft Predictive Model</a>
-    <a class="link-card" href="page2.html">Womens Basketball Computer Vision and Predictive Model</a>
-    <a class="link-card" href="page3.html">NFL Combine and Future Performance Predictions</a>
-    <a class="link-card" href="page4.html">NFL Concussions and Team Performance</a>
-    <a class="link-card" href="page5.html">Super Bowl Viewership Prediction by Regular Season Performance</a>
-    <a class="link-card" href="page6.html">NBA API and Database</a>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-head reveal">
+      <p class="eyebrow">01 / ABOUT</p>
+      <h2>Background</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I'm a data analyst and developer with a Master's in Big Data Analytics and a background in Neuroscience from the University of Michigan. I specialize in data analysis, machine learning, and programming, with experience across media communications, athletics, and sports analytics.</p>
+        <p>I'm skilled in Python, R, and SQL, and passionate about turning complex data into actionable insights. This site — HTML and CSS included — is hand-coded and hosted through GitHub Pages.</p>
+      </div>
+      <div class="about-skills reveal">
+        <p class="skills-label">Toolkit</p>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>R</li>
+          <li>SQL</li>
+          <li>Machine Learning</li>
+          <li>Data Mining</li>
+          <li>Computer Vision</li>
+          <li>Predictive Modeling</li>
+          <li>Data Visualization</li>
+        </ul>
+      </div>
+    </div>
   </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <p class="eyebrow">02 / PROJECTS</p>
+      <h2>Selected Work</h2>
+      <p class="section-sub">Machine learning, data mining, and computer vision projects, mostly in sports analytics.</p>
+    </div>
+
+    <ul class="project-list">
+      <li class="project-row reveal">
+        <a href="page1.html">
+          <span class="p-index">P01</span>
+          <span class="p-title">Football Network Analysis and NFL Draft Predictive Model</span>
+          <span class="p-tag">Predictive Modeling</span>
+          <span class="p-arrow">→</span>
+        </a>
+      </li>
+      <li class="project-row reveal">
+        <a href="page2.html">
+          <span class="p-index">P02</span>
+          <span class="p-title">Women's Basketball Computer Vision and Predictive Model</span>
+          <span class="p-tag">Computer Vision</span>
+          <span class="p-arrow">→</span>
+        </a>
+      </li>
+      <li class="project-row reveal">
+        <a href="page3.html">
+          <span class="p-index">P03</span>
+          <span class="p-title">NFL Combine and Future Performance Predictions</span>
+          <span class="p-tag">Machine Learning</span>
+          <span class="p-arrow">→</span>
+        </a>
+      </li>
+      <li class="project-row reveal">
+        <a href="page4.html">
+          <span class="p-index">P04</span>
+          <span class="p-title">NFL Concussions and Team Performance</span>
+          <span class="p-tag">Data Analysis</span>
+          <span class="p-arrow">→</span>
+        </a>
+      </li>
+      <li class="project-row reveal">
+        <a href="page5.html">
+          <span class="p-index">P05</span>
+          <span class="p-title">Super Bowl Viewership Prediction by Regular Season Performance</span>
+          <span class="p-tag">Predictive Modeling</span>
+          <span class="p-arrow">→</span>
+        </a>
+      </li>
+      <li class="project-row reveal">
+        <a href="page6.html">
+          <span class="p-index">P06</span>
+          <span class="p-title">NBA API and Database</span>
+          <span class="p-tag">Data Engineering</span>
+          <span class="p-arrow">→</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">03 / CONTACT</p>
+      <h2>Let's talk data.</h2>
+      <p class="section-sub">Open to opportunities in analytics, machine learning, and sports data science.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:ogradycaitlin333@gmail.com">ogradycaitlin333@gmail.com</a>
+        <a class="btn btn-ghost" href="CaitlinOGrady-Resume.pdf">View Resume</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Designed &amp; built by Caitlin O'Grady.</p>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced) {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  }
+</script>
 </body>
 </html>
-
